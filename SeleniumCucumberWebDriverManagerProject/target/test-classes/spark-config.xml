@@ -1,0 +1,60 @@
+<extentreports>
+    <configuration>
+        <!-- Enable the dashboard -->
+        <enable-dashboard>true</enable-dashboard>
+
+        <!-- Set the report name -->
+        <report-name>Cucumber Extent Report</report-name>
+
+        <!-- Set the document encoding -->
+        <encoding>UTF-8</encoding>
+
+        <!-- Set the protocol (http/https) -->
+        <protocol>https</protocol>
+
+        <!-- Set offline mode to false (report resources loaded online) -->
+        <offline-mode>false</offline-mode>
+
+        <!-- Set the theme to dark -->
+        <theme>dark</theme>
+
+        <!-- Set the document title -->
+        <document-title>Test Execution Report</document-title>
+
+        <!-- Set the time-stamp format -->
+        <time-stamp-format>MMM dd, yyyy HH:mm:ss</time-stamp-format>
+
+        <!-- Additional aesthetic configurations -->
+        <css>
+            .logo-container img {
+                width: 200px;
+            }
+            .report-name {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .node-name, .test-name {
+                font-size: 18px;
+            }
+            .status-pass {
+                background-color: #2c3e50;
+                color: #2ecc71;
+            }
+            .status-fail {
+                background-color: #2c3e50;
+                color: #e74c3c;
+            }
+            .status-skip {
+                background-color: #2c3e50;
+                color: #f1c40f;
+            }
+        </css>
+        <js>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.logo-container img').forEach(img => {
+                    img.src = 'https://yourlogo.url/logo.png'; // Custom logo URL
+                });
+            });
+        </js>
+    </configuration>
+</extentreports>
